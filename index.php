@@ -15,28 +15,63 @@
                 <br><br>
 
                 <div class="col-4 text-center">
+                <?php 
+                        //Sql Query 
+                        $sql = "SELECT * FROM patient";
+                        //Execute Query
+                        $res = mysqli_query($conn, $sql);
+                        //Count Rows
+                        $count = mysqli_num_rows($res);
+                    ?>
 
+                    <h1><?php echo $count; ?></h1>
                     <br />
-                    Categories
+                    Patient
                 </div>
 
                 <div class="col-4 text-center">
+                <?php 
+                        //Sql Query 
+                        $sql = "SELECT * FROM doctor";
+                        //Execute Query
+                        $res = mysqli_query($conn, $sql);
+                        //Count Rows
+                        $count = mysqli_num_rows($res);
+                    ?>
 
+                    <h1><?php echo $count; ?></h1>
                     <br />
-                    Foods
+                    Doctor
                 </div>
 
                 <div class="col-4 text-center">
-                    
+                <?php 
+                        //Sql Query 
+                        $sql = "SELECT * FROM nurse";
+                        //Execute Query
+                        $res = mysqli_query($conn, $sql);
+                        //Count Rows
+                        $count = mysqli_num_rows($res);
+                    ?>
+
+                    <h1><?php echo $count; ?></h1>
                     <br />
-                    Total Orders
+                    Nurse
                 </div>
 
                 <div class="col-4 text-center">
-                    
-                   
+                <?php 
+                        //Sql Query 
+                        $sql = "SELECT * FROM room";
+                        //Execute Query
+                        $res = mysqli_query($conn, $sql);
+                        //Count Rows
+                        $count = mysqli_num_rows($res);
+                    ?>
+
+                    <h1><?php echo $count; ?></h1>
                     <br />
-                    Revenue Generated
+                    Room
                 </div>
 
                 <div class="clearfix"></div>
