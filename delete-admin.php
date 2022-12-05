@@ -1,7 +1,7 @@
 <?php 
 
     //Include constants.php file here
-    include('../config/constants.php');
+    include('config/constants.php');
 
     // 1. get the ID of Admin to be deleted
     $id = $_GET['id'];
@@ -20,7 +20,7 @@
         //Create SEssion Variable to Display Message
         $_SESSION['delete'] = "<div class='success'>Admin Deleted Successfully.</div>";
         //Redirect to Manage Admin Page
-        header('location:'.SITEURL.'admin/manage-admin.php');
+        header('location:'.SITEURL.'manage-admin.php');
     }
     else
     {
@@ -28,7 +28,7 @@
         //echo "Failed to Delete Admin";
 
         $_SESSION['delete'] = "<div class='error'>Failed to Delete Admin. Try Again Later.</div>";
-        header('location:'.SITEURL.'admin/manage-admin.php');
+        header('location:'.SITEURL.'manage-admin.php');
     }
 
     //3. Redirect to Manage Admin page with message (success/error)

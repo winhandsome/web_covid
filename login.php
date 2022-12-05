@@ -1,9 +1,9 @@
-<?php include('../config/constants.php'); ?>
+<?php include('config/constants.php'); ?>
 
 <html>
     <head>
         <title>Login - Quarantine Camp System</title>
-        <link rel="stylesheet" href="../css/admin.css">
+        <link rel="stylesheet" href="css/admin.css">
     </head>
 
     <body>
@@ -76,14 +76,14 @@
             $_SESSION['user'] = $username; //TO check whether the user is logged in or not and logout will unset it
 
             //REdirect to Home Page/Dashboard
-            header('location:'.SITEURL.'admin/');
+            header('location:'.SITEURL.'');
         }
         else
         {
             //User not Available and Login Fail
             $_SESSION['login'] = "<div class='error text-center'>Username or Password did not match.</div>";
             //REdirect to HOme Page/Dashboard
-            header('location:'.SITEURL.'admin/login.php');
+            header('location:'.SITEURL.'login.php');
         }
 
 

@@ -1,6 +1,6 @@
 <?php 
 
-    include('../config/constants.php'); 
+    include('config/constants.php'); 
     include('login-check.php');
 
 ?>
@@ -10,7 +10,7 @@
     <head>
         <title>Food Order Website - Home Page</title>
 
-        <link rel="stylesheet" href="../css/admin.css">
+        <link rel="stylesheet" href="css/admin.css">
     </head>
     
     <body>
