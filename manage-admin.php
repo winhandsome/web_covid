@@ -9,22 +9,22 @@
                 <br />
 
                 <?php 
-                    if(isset($_SESSION['add']))
+                    if(isset($_SESSION['add-admin']))
                     {
-                        echo $_SESSION['add']; //Displaying Session Message
-                        unset($_SESSION['add']); //REmoving Session Message
+                        echo $_SESSION['add-admin']; //Displaying Session Message
+                        unset($_SESSION['add-admin']); //REmoving Session Message
                     }
 
-                    if(isset($_SESSION['delete']))
+                    if(isset($_SESSION['delete-admin']))
                     {
-                        echo $_SESSION['delete'];
-                        unset($_SESSION['delete']);
+                        echo $_SESSION['delete-admin'];
+                        unset($_SESSION['delete-admin']);
                     }
                     
-                    if(isset($_SESSION['update']))
+                    if(isset($_SESSION['update-admin']))
                     {
-                        echo $_SESSION['update'];
-                        unset($_SESSION['update']);
+                        echo $_SESSION['update-admin'];
+                        unset($_SESSION['update-admin']);
                     }
 
                     if(isset($_SESSION['user-not-found']))

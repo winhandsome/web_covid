@@ -11,6 +11,7 @@
         <title>Quarantine Camp - Home Page</title>
 
         <link rel="stylesheet" href="css/admin.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     
     <body>

@@ -7,10 +7,10 @@
         <br><br>
 
         <?php 
-            if(isset($_SESSION['add'])) //Checking whether the SEssion is Set of Not
+            if(isset($_SESSION['add-admin'])) //Checking whether the SEssion is Set of Not
             {
-                echo $_SESSION['add']; //Display the SEssion Message if SEt
-                unset($_SESSION['add']); //Remove Session Message
+                echo $_SESSION['add-admin']; //Display the SEssion Message if SEt
+                unset($_SESSION['add-admin']); //Remove Session Message
             }
         ?>
 
@@ -86,7 +86,7 @@
             //Data Inserted
             //echo "Data Inserted";
             //Create a Session Variable to Display Message
-            $_SESSION['add'] = "<div class='success'>Admin Added Successfully.</div>";
+            $_SESSION['add-admin'] = "<div class='success'>Admin Added Successfully.</div>";
             //Redirect Page to Manage Admin
             header("location:".SITEURL.'manage-admin.php');
         }
@@ -95,7 +95,7 @@
             //FAiled to Insert DAta
             //echo "Faile to Insert Data";
             //Create a Session Variable to Display Message
-            $_SESSION['add'] = "<div class='error'>Failed to Add Admin.</div>";
+            $_SESSION['add-admin'] = "<div class='error'>Failed to Add Admin.</div>";
             //Redirect Page to Add Admin
             header("location:".SITEURL.'add-admin.php');
         }

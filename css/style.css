@@ -109,14 +109,14 @@ fieldset{
 }
 
 
-/* CSS for Food SEarch Section */
+/* CSS for Food Search Section */
 
 .food-search{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../background_search.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 7% 0;
+    padding: 17% 0;
 }
 
 .food-search input[type="search"]{

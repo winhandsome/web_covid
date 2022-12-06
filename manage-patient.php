@@ -84,7 +84,7 @@
                                 ?>
 
                                 <tr>
-                                    <td><?php echo $sn++; ?>. </td>
+                                    <td><?php echo $id; ?>. </td>
                                     <td><?php echo $full_name; ?></td>
                                     <td><?php if ($gender=='M') echo "Male"; else echo "Female"; ?></td>
                                     <td><?php echo $address; ?></td>
