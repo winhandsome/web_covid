@@ -10,8 +10,7 @@
     <head>
         <title>Quarantine Camp - Home Page</title>
 
-        <link rel="stylesheet" href="css/admin.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_search.css">
     </head>
     
     <body>
@@ -21,8 +20,8 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="manage-admin.php">Admin</a></li>
-                    <li><a href="manage-search-patient.php">Search</a></li>
                     <li><a href="manage-patient.php">Patient</a></li>
+                    <li><a href="manage-search-patient.php">Search</a></li>
                     <li><a href="manage-test.php">Test</a></li>
                     <li><a href="logout.php">Logout</a></li>
                 </ul>

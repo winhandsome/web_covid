@@ -13,14 +13,12 @@
 <table class="tbl-full">
     <tr>
         <th>ID</th>
-        <th>Full_name</th>
-        <th>Phone</th>
-        <th>Comorbidity</th>
+        <th>Type</th>
     </tr>
 
     <?php 
         //Create a SQL Query to Get all the Food
-        $sql = "SELECT * FROM patient WHERE id LIKE '$search'";
+        $sql = "SELECT * FROM test WHERE id_patient LIKE '$search'";
 
         //Execute the qUery
         $res = mysqli_query($conn, $sql);
@@ -39,17 +37,12 @@
             {
                 //get the values from individual columns
                 $id = $row['id'];
-                $full_name = $row['full_name'];
-                $phone = $row['phone'];
-                $comorbidity = $row['comorbidity'];
+                $type = $row['type'];
                 ?>
 
                 <tr>
                     <td><?php echo $id; ?>. </td>
-                    <td><?php echo $full_name; ?></td>
-                    <td><?php echo $phone; ?></td>
-                    <td><?php echo $comorbidity; ?></td>
-
+                    <td><?php echo $type; ?></td>
                 </tr>
 
                 <?php
